@@ -1,0 +1,26 @@
+localhost:8000
+simplehttpserver C:\Users\ancura\Documents\WSS
+
+<h4 class="col-sm-offset-3 col-xs-12 col-sm-3"></h4>
+                
+                      
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 menuItems">
+                <p class="SubText col-sm-offset- col-xs-12 col-sm-12"></p>
+
+				<ul>
+            		<h2 class="hoursClass">Hours</h2>
+            			<li>Sunday<span>8:00am - 6:00pm</span></li>
+            			<li>Monday<span>8:00am - 8:00pm</span></li>
+            			<li>Tuesday<span>8:00am - 8:00pm</span></li>
+            			<li>Wednesday<span>8:00am - 8:00pm</span></li>
+            			<li>Thursday<span>8:00am - 8:00pm</span></li>
+            			<li>Friday<span>8:00am - 8:00pm</span></li>
+            			<li>Saturday<span>8:00am - 8:00pm</span></li>
+				</ul>
+
+
+                <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center" target="_blank">
+                                    <img src="img/yelp-logo-medium.png">
+
+
+
