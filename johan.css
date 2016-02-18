@@ -176,3 +176,7 @@ li {
     transform: translate3d(6px, 0, 0);
   }
 }
+
+.fb-comments, .fb-comments iframe[style], .fb-comments span {
+   width: 100% !important;
+}
