@@ -1,1 +1,2 @@
-<a href="http://ancura.github.io/WSS/">This is the link to my mothers restaurant. </a>
+# WSS
+http://ancura.github.io/WSS

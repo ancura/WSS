@@ -5,8 +5,8 @@
     <meta name="HandheldFriendly" content="True"/>
     <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/bootstrap.css" style="html/css">
-    <link rel="stylesheet" type="text/css" href="css/johan.css">
+    <link rel="stylesheet" href="bootstrap.css" style="html/css">
+    <link rel="stylesheet" type="text/css" href="johan.css">
     
     <meta charset="utf-8">
     
@@ -16,15 +16,7 @@
     </head>
     
     
-    <body class="backgroundImg">
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+    <body>
         <div class="page-container">
             <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -66,7 +58,7 @@
             
             <div class="container-fluid">
             <div class="row">
-                <div class="HourStyle col-xs-12 col-md-4">
+                <div class="HourStyle col-xs-12 col-md-6">
                 	<ul class="TextSpacing">
                 		<h2 class="ITEMS">Find Us</h2>
                 			<div class="LocationSq">
@@ -76,7 +68,7 @@
 								        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_X3J8J36VU5EcZp7OGMBtEit5IJ1_Lkc
 								        &libraries=visualization&callback=initMap">
 								    </script>
-								    <script src="js/map.js"> </script>
+								    <script src="map.js"> </script>
     	            			
     	            	
                 			</div>
@@ -84,7 +76,7 @@
     				</ul>
     			</div>
 
-    			<div class="HourStyle col-xs-12 col-md-4">
+    			<div class="HourStyle col-xs-12 col-md-6">
                 	<ul class="TextSpacing">
                 		<h2 class="ITEMS">Hours</h2>
                 			<div class="LocationSq">
@@ -102,19 +94,21 @@
     				</ul>
     			</div>
 
-    			<div class="HourStyle col-xs-6 col-md-4">
-                	<ul class="TextSpacing">
-                		<h2 class="ITEMS">Like Us</h2>
-                			<div class="LocationSq face:hover">
-                            <div class="fb-container">
-                            <div class="fb-page" data-href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/" data-tabs="timeline, reviews, photos" data-width="500" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-                            </div>
-                			</div>
-    				</ul>
-    			</div>
+    		
+    		<div class="container-fluid">
+            <div class="row">
     			
-    		</div>   
-            </div>
-        </div>
+    			<div class="col-xs-12 col-md-4 Button-Row">
+                    
+                	<a href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/?fref=photo"><img class="FB-Button swing" src="http://www.theboatsafe.com/wp-content/uploads/shopp/Facebook.Circle.png"></a>
+            		
+            		<a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="http://icons.iconarchive.com/icons/martz90/circle-addon1/512/yelp-icon.png"></a>
+                </div>
+
+    		</div>
+    		</div>
+
+        
+        
     </body>
 </html>
