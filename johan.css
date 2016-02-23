@@ -151,6 +151,10 @@ li {
 	height: 300px;
 }
 
+.FB-Button {
+	height: 100px;
+	width: 100px;
+}
 
 .face:hover {
   animation: shake 8s cubic-bezier(.36,.07,.19,.97) both;
@@ -175,8 +179,4 @@ li {
   40%, 60% {
     transform: translate3d(6px, 0, 0);
   }
-}
-
-.fb-page, .fb-page iframe[style], .fb-page span {
-   width: 100% !important;
 }
