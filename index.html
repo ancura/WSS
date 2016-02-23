@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1.0; user-scalable=0;">
+    <meta name="HandheldFriendly" content="True"/>
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" style="html/css">
+    <link rel="stylesheet" type="text/css" href="css/johan.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+    
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>L&C Spanish Restaurant</title>
+    </head>
+    
+    
+    <body>
+        
+        <div class="page-container">
+            <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="index.html">Brand</a>
+              </div>
+             <div class="collapse navbar-collapse" id="navbar-collapsible">
+                    <ul class="nav navbar-nav NavBar">
+                        <li class="active">
+                         <a href="index.html">Home</a>
+                        </li>
+                        <li> 
+                         <a href="menu.html">Menu</a>
+                        </li>
+
+                    <!-- Add more links! -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    	
+    	<!-- <img src="" alt="..." class="img-responsive">
+    	-->
+
+            <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-xs-12 col-md-12">
+            	    <h1 class="WelcomeText onFrame">Welcome</h1>
+            	       <p class="WelcomeParagraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            </div>
+
+            <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() { 
+            $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+            },  3000);
+            </script>
+
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+
+            <div class="container-fluid">
+            <div class="row">
+                
+                <div class="nomobile col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+
+                    <div id="slideshow">
+                       <div>
+                         <img class="image1" src="http://sweetlifebake.com/wp-content/uploads/2011/03/sopa-de-fideo-052.jpg">
+                       </div>
+                       <div>
+                         <img class="image1" src="http://trichilofoods.com/site/wp-content/uploads/2015/06/veggies.jpg">
+                       </div>
+                       <div>
+                           <img class="image1" src="https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr01/4/17/puerto-rican-frituras-29759-1380921178-16.jpg">
+                       </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="container-fluid">
+            <div class="row">
+                <div class="HourStyle col-xs-12 col-md-6">
+                	<ul class="TextSpacing">
+                		<h2 class="ITEMS">Find Us</h2>
+                			<div class="LocationSq">
+                			
+                			<div id="map"></div>
+								    <script async defer
+								        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_X3J8J36VU5EcZp7OGMBtEit5IJ1_Lkc
+								        &libraries=visualization&callback=initMap">
+								    </script>
+								    <script src="js/map.js"> </script>
+    	            			
+    	            	
+                			</div>
+
+    				</ul>
+    			</div>
+
+    			<div class="HourStyle col-xs-12 col-md-6">
+                	<ul class="TextSpacing">
+                		<h2 class="ITEMS">Hours</h2>
+                			<div class="LocationSq">
+                				<ul class="SquareText">
+	                				<li>Sunday<span>8:00am - 6:00pm</span></li>
+	    	            			<li>Monday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Tuesday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Wednesday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Thursday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Friday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Saturday<span>8:00am - 8:00pm</span></li>
+    	            			</ul>
+                			</div>
+                			
+    				</ul>
+    			</div>
+                </div>
+                </div>
+
+    		<!-- test -->
+    		<div class="container-fluid">
+            <div class="row rowBackgroundColor">
+    			
+    			<div class="col-xs-3 col-sm-3 col-md-1">
+                    
+                    <a href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/?fref=photo"><img class="FB-Button" src="http://a4.mzstatic.com/us/r30/Purple7/v4/ab/38/a2/ab38a28e-e6ce-f6f3-327c-6e636c562e47/icon320x320.png"></a>
+
+                </div>
+
+                <h1></h1>
+
+                <div>
+                    <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="http://media1.fl.yelpcdn.com/img/logo/yelp_og_image.png"></a>
+                    
+                </div>
+                <div class="fb-like" data-href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/?fref=photo" data-width="200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+    		</div>
+    		</div>
+            
+        
+        
+    </body>
+</html>
