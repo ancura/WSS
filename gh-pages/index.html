@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <!-- you can use these links, but better you have a link to the versions you need -->
+        <!-- usage of folder "current" is not recommended -->
+        <!-- see http://beaverslider.com/how-to-setup/docs/general for more info -->
+        <script src="http://beaverslider.com/code/current/beaverslider.js"></script>
+        <script src="http://beaverslider.com/code/current/beaverslider-effects.js"></script>
+
+        <script>
+            $(function(){
+                var slider = new BeaverSlider({
+                    type: "slider",
+                    structure: {
+                        container: {
+                            id: "my-slider",
+                            width: 600,
+                            height: 300
+                        }
+                    },
+                    content: {
+                        images: ["http://www.ndtv.com/cooks/images/dilli.ki.fried.aloo.chaat600.jpg", "http://greatwesternfoods.net/images/slideshow/01.jpg", "http://www.bestcollegesonline.com/wp-content/uploads/2012/01/collegefood/02_burgers.jpg"]
+                    },
+                    animation: {
+                        effects: effectSets["slider: weed"],
+                        interval: 5000,
+                        initialInterval: 5000,
+                        waitAllImages: true
+                    }
+                });
+            });
+        </script>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1.0; user-scalable=0;">
+    <meta name="HandheldFriendly" content="True"/>
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" style="html/css">
+    <link rel="stylesheet" type="text/css" href="css/johan.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+    
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>L&C Spanish Restaurant</title>
+    </head>
+    
+    
+    <body class="backgroundImg">
+        <div class="page-container">
+            <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="index.html">Brand</a>
+              </div>
+             <div class="collapse navbar-collapse" id="navbar-collapsible">
+                    <ul class="nav navbar-nav NavBar">
+                        <li class="active">
+                         <a href="index.html">Home</a>
+                        </li>
+                        <li> 
+                         <a href="menu.html">Menu</a>
+                        </li>
+
+                    <!-- Add more links! -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    	
+    	<!-- <img src="" alt="..." class="img-responsive">
+    	-->
+
+            <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-xs-12 col-md-12">
+            	    <h1 class="WelcomeText onFrame">Welcome</h1>
+            	       <p class="WelcomeParagraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            </div>
+
+            <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() { 
+            $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+            },  3000);
+            </script>
+
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+
+            <div class="container-fluid">
+            <div class="row">
+                
+                <div class="nomobile col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
+                    <div id="my-slider"></div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="container-fluid">
+            <div class="row">
+                <div class="HourStyle col-xs-12 col-md-6">
+                	<ul class="TextSpacing">
+                		<h2 class="ITEMS">Find Us</h2>
+                			<div class="LocationSq">
+                			
+                			<div id="map"></div>
+								    <script async defer
+								        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_X3J8J36VU5EcZp7OGMBtEit5IJ1_Lkc
+								        &libraries=visualization&callback=initMap">
+								    </script>
+								    <script src="js/map.js"> </script>
+    	            			
+    	            	
+                			</div>
+
+    				</ul>
+    			</div>
+
+    			<div class="HourStyle col-xs-12 col-md-6">
+                	<ul class="TextSpacing">
+                		<h2 class="ITEMS">Hours</h2>
+                			<div class="LocationSq">
+                				<ul class="SquareText">
+	                				<li>Sunday<span>8:00am - 6:00pm</span></li>
+	    	            			<li>Monday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Tuesday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Wednesday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Thursday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Friday<span>8:00am - 8:00pm</span></li>
+	    	            			<li>Saturday<span>8:00am - 8:00pm</span></li>
+    	            			</ul>
+                			</div>
+                			
+    				</ul>
+    			</div>
+                </div>
+                </div>
+
+
+        <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+    		
+            <!-- test -->
+    		
+
+            <div id="footer-container">
+                <div class="logos-holder">
+                    <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/1280px-Yelp_Logo.svg.png"></a>
+                </div>
+
+                <div>
+                    <div 
+                    class="fb-like" 
+                    data-href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/" data-layout="standard" 
+                    data-action="like" 
+                    data-show-faces="true" 
+                    data-share="true"></div>
+                </div>
+            </div>
+            
+        
+        
+    </body>
+</html>
