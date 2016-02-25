@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <!-- you can use these links, but better you have a link to the versions you need -->
+        <!-- usage of folder "current" is not recommended -->
+        <!-- see http://beaverslider.com/how-to-setup/docs/general for more info -->
+        <script src="http://beaverslider.com/code/current/beaverslider.js"></script>
+        <script src="http://beaverslider.com/code/current/beaverslider-effects.js"></script>
+
+        <script>
+            $(function(){
+                var slider = new BeaverSlider({
+                    type: "slider",
+                    structure: {
+                        container: {
+                            id: "my-slider",
+                            width: 600,
+                            height: 300
+                        }
+                    },
+                    content: {
+                        images: ["http://www.ndtv.com/cooks/images/dilli.ki.fried.aloo.chaat600.jpg", "http://greatwesternfoods.net/images/slideshow/01.jpg", "http://www.bestcollegesonline.com/wp-content/uploads/2012/01/collegefood/02_burgers.jpg"]
+                    },
+                    animation: {
+                        effects: effectSets["slider: weed"],
+                        interval: 5000,
+                        initialInterval: 5000,
+                        waitAllImages: true
+                    }
+                });
+            });
+        </script>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500' rel='stylesheet' type='text/css'>
@@ -21,8 +51,7 @@
     </head>
     
     
-    <body>
-        
+    <body class="backgroundImg">
         <div class="page-container">
             <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -91,18 +120,7 @@
             <div class="row">
                 
                 <div class="nomobile col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-
-                    <div id="slideshow">
-                       <div>
-                         <img class="image1" src="http://sweetlifebake.com/wp-content/uploads/2011/03/sopa-de-fideo-052.jpg">
-                       </div>
-                       <div>
-                         <img class="image1" src="http://trichilofoods.com/site/wp-content/uploads/2015/06/veggies.jpg">
-                       </div>
-                       <div>
-                           <img class="image1" src="https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr01/4/17/puerto-rican-frituras-29759-1380921178-16.jpg">
-                       </div>
-                    </div>
+                    <div id="my-slider"></div>
                 </div>
             </div>
             </div>
@@ -147,26 +165,33 @@
                 </div>
                 </div>
 
-    		<!-- test -->
-    		<div class="container-fluid">
-            <div class="row rowBackgroundColor">
-    			
-    			<div class="col-xs-3 col-sm-3 col-md-1">
-                    
-                    <a href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/?fref=photo"><img class="FB-Button" src="http://a4.mzstatic.com/us/r30/Purple7/v4/ab/38/a2/ab38a28e-e6ce-f6f3-327c-6e636c562e47/icon320x320.png"></a>
 
+        <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+    		
+            <!-- test -->
+    		
+
+            <div id="footer-container">
+                <div class="logos-holder">
+                    <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/1280px-Yelp_Logo.svg.png"></a>
                 </div>
-
-                <h1></h1>
 
                 <div>
-                    <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="http://media1.fl.yelpcdn.com/img/logo/yelp_og_image.png"></a>
-                    
+                    <div 
+                    class="fb-like" 
+                    data-href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/" data-layout="standard" 
+                    data-action="like" 
+                    data-show-faces="true" 
+                    data-share="true"></div>
                 </div>
-                <div class="fb-like" data-href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/?fref=photo" data-width="200" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-
-    		</div>
-    		</div>
+            </div>
             
         
         

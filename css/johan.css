@@ -1,9 +1,9 @@
-body {
-	background: url(https://zoeyoungerauthor.files.wordpress.com/2015/05/dollarphotoclub_78204101.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body.backgroundImg {
+	background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/restaurant_icons.png);
+    -webkit-background-size: none;
+    -moz-background-size: none;
+    -o-background-size: none;
+    background-size: none;
 }
 
 .page-container {
@@ -152,49 +152,11 @@ li {
 	margin: 0 auto;
 }
 
-.FB-Button {
-	height: 45px;
-	width: 45px;
-	float: left;
-}
-
 .Yelp-Button {
-	margin-top: -20px;
-	height: 45px;
-	width: 45px;
-	float: left;
+	height: 60px;
+	width: 110px;
 }
 
-
-
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 100%; 
-    height: 300px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-}
-
-#slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
-}
-
-
-.image1 {
-	width: 100%;
-	height: 100%;
-}
-
-
-.image2 {
-	width: 100%;
-	height: 100%;
-}
 
 .rowBackgroundColor {
 	margin-left: 1px;
@@ -204,16 +166,31 @@ li {
 	background-size: cover;
 }
 
+#my-slider {
+	margin-top: 30px;
+	padding: 10px;
+}
+
 @media screen and (max-width: 480px) {
+		body.backgroundImg {
+			background-image: none;
+		}
 
         .nomobile {
             display:none;
         }
 }
 
+#footer-container {
+    width: 100%;
+    padding-top: 6px;
+    margin-top: 40px;
+    background-color: rgba(81,81,81,1);
+    height: 200px;
+}
 
-.fb-like {
-	float: right;
-    margin-top: -7px;
+.logos-holder {
+	margin: 20px 0 0 30px;
 }
-}
+
+
