@@ -1,0 +1,45 @@
+<div class="container-fluid">
+            <div class="row rowBackgroundColor">
+    			
+    			<div class="col-xs-3 col-sm-3 col-md-1">
+                    
+                    <a href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/?fref=photo"><img class="FB-Button" src="http://a4.mzstatic.com/us/r30/Purple7/v4/ab/38/a2/ab38a28e-e6ce-f6f3-327c-6e636c562e47/icon320x320.png"></a>
+
+                </div>
+
+                <div>
+                    <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="http://media1.fl.yelpcdn.com/img/logo/yelp_og_image.png"></a>
+                </div>
+                
+
+    		</div>
+    		</div>
+
+
+
+<script>
+            $(function(){
+                var slider = new BeaverSlider({
+                    type: "slider",
+                    structure: {
+                        container: {
+                            id: "my-slider",
+                            width: 600,
+                            height: 300
+                        }
+                    },
+                    content: {
+                        images: ["http://www.ndtv.com/cooks/images/dilli.ki.fried.aloo.chaat600.jpg", "http://greatwesternfoods.net/images/slideshow/01.jpg", "http://www.bestcollegesonline.com/wp-content/uploads/2012/01/collegefood/02_burgers.jpg"]
+                    },
+                    animation: {
+                        effects: effectSets["slider: weed"],
+                        interval: 5000,
+                        initialInterval: 5000,
+                        waitAllImages: true
+                    }
+                });
+            });
+        </script>
+
+
+        <div id="my-slider"></div>
