@@ -167,8 +167,8 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-		.fb-like {
-			margin-left: 0px;
+		#footer-container {
+			display: none;
 		}
 
 		body.backgroundImg {
@@ -194,7 +194,7 @@ li {
 
 .fb-like {
 	margin-top: 60px;
-    margin-left: 2px;
+    margin-left: 5px;
 }
 
 .contact {
