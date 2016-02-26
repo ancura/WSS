@@ -148,6 +148,7 @@ li {
 
 
 .Yelp-Button {
+	margin-left: 330px;
 	height: 40px;
 	width: 85px;
 }
@@ -198,8 +199,9 @@ li {
 }
 
 .fb-like {
-	margin-top: 15px;
-    margin-left: 130px;
+	margin-right: -60px;
+    margin-top: 15px;
+    float: right;
 }
 
 .contact {
