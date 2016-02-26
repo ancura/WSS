@@ -193,8 +193,8 @@ li {
 	margin: 20px 0 0 30px;
 }
 
-div.fb-like.fb_iframe_widget {
-	margin-top: 60px;
+.fb-like {
+	margin-top: 50px;
     margin-left: 20px;
 }
 
