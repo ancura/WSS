@@ -153,8 +153,8 @@ li {
 }
 
 .Yelp-Button {
-	height: 60px;
-	width: 110px;
+	height: 40px;
+	width: 85px;
 }
 
 
@@ -186,11 +186,15 @@ li {
     padding-top: 6px;
     margin-top: 40px;
     background-color: rgba(81,81,81,1);
-    height: 200px;
+    height: 150px;
 }
 
 .logos-holder {
 	margin: 20px 0 0 30px;
 }
 
+div.fb-like.fb_iframe_widget {
+	margin-top: 75px;
+    margin-left: 20px;
+}
 
