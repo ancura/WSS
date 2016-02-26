@@ -167,6 +167,13 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+		.fb-like {
+			margin-left: 0px;
+			
+		}
+
+
+
 		body.backgroundImg {
 			background-image: none;
 		}
@@ -189,6 +196,7 @@ li {
 }
 
 .fb-like {
+	width: 100%;
 	margin-top: 40px;
     margin-left: 20px;
 }
