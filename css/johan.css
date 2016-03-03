@@ -181,12 +181,9 @@ li {
 		.areamap-container { 
 		}
 
-		#footer-container {
-			display: none;
-		}
 
 		body.backgroundImg {
-			background-image: none;
+			
 		}
 
         .nomobile {
@@ -222,9 +219,16 @@ li {
 
 }
 
+.Yelp-Logo {
+	width: 5%;
+    height: 32px;
+}
+
 .fb-like {
+
+	width: 13%;
 	margin-left: 10px;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .contact {
