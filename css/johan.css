@@ -11,6 +11,11 @@ body.backgroundImg {
 	margin:auto;
 }
 
+.navbar-brand {
+	font-size: 16pt;
+	font-family: 'Noticia Text', serif;
+}
+
 .WelcomeText {
 	font-family: 'Noticia Text', serif;
 	font-weight: bold;
@@ -276,7 +281,4 @@ li {
 	background-color: blue;
 }
 
-.timeChecker {
-	width: 100px;
-	height: 50px;
-}
+

@@ -10,3 +10,5 @@ var checkOpenStatus = function () {
     document.getElementById("open-close").innerHTML = y;
     setTimeout(checkOpenStatus,15000);
 };
+
+checkOpenStatus();
