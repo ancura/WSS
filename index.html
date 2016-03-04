@@ -32,6 +32,7 @@
             });
         </script>
     <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1.0; user-scalable=0;">
@@ -88,6 +89,20 @@
     	
     	<!-- <img src="" alt="..." class="img-responsive">
     	-->
+        <h1 class="hours">Today's Hours:</h1>
+        <div id="hours"></div>
+        <script>
+        var dayOfWeek = (new Date).getDay();
+var hours = ["8 AM to 6 PM",   // Sunday
+             "8 AM to 8 PM",   // Monday
+             "8 AM to 8 PM",   // Tuesday
+             "8 AM to 8 PM",   // Wednesday
+             "8 AM to 8 PM",   // Thursday
+             "8 AM to 8 PM",   // Friday
+             "8 PM to 8 PM"];  // Saturday
+var todaysHours = hours[dayOfWeek];
+document.getElementById("hours").innerHTML = todaysHours;
+        </script>
 
             <div class="container-fluid">
             <div class="row">

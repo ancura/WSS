@@ -176,6 +176,15 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+		#hours {
+			text-align: center;
+			font-size: 10pt;
+		}
+		.hours {
+			text-align: center;
+			font-size: 20pt;
+		}
+
 		.hiddenMin480 {
 		}
 
@@ -281,4 +290,7 @@ li {
 	background-color: blue;
 }
 
+.hours {
+	font-family: 'Monofett', cursive;
+}
 
