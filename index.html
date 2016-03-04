@@ -93,13 +93,14 @@
         <div id="hours"></div>
         <script>
         var dayOfWeek = (new Date).getDay();
-var hours = ["8 AM to 6 PM",   // Sunday
-             "8 AM to 8 PM",   // Monday
-             "8 AM to 8 PM",   // Tuesday
-             "8 AM to 8 PM",   // Wednesday
-             "8 AM to 8 PM",   // Thursday
-             "8 AM to 8 PM",   // Friday
-             "8 PM to 8 PM"];  // Saturday
+        var hours = [
+             "8 AM to 6 PM &nbsp; Open Now!",   // Sunday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Monday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Tuesday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Wednesday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Thursday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Friday
+             "8 PM to 8 PM &nbsp; Open Now!"];  // Saturday
 var todaysHours = hours[dayOfWeek];
 document.getElementById("hours").innerHTML = todaysHours;
         </script>
