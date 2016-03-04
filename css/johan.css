@@ -212,6 +212,13 @@ li {
 			display: none;
 		}
 
+		.hours {
+			margin-left: 15px;
+		} 
+		
+		#hours {
+			margin-left: 15px;
+		}
 }
 
 #footer-container {
