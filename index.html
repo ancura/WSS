@@ -31,8 +31,13 @@
                 });
             });
         </script>
+
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900italic' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1; maximum-scale=1.0; user-scalable=0;">
     <meta name="HandheldFriendly" content="True"/>
@@ -40,6 +45,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css" style="html/css">
     <link rel="stylesheet" type="text/css" href="css/johan.css">
+    <script type="text/javascript" src="open_close.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
    
     
@@ -60,35 +67,58 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="index.html">Brand</a>
+                </button>
+                 <a class="navbar-brand" href="index.html">L&C</a>
               </div>
              <div class="collapse navbar-collapse" id="navbar-collapsible">
-                    <ul class="nav navbar-nav NavBar">
-                        <li class="active">
-                         <a href="index.html">Home</a>
-                        </li>
-                        <li> 
-                         <a href="menu.html">Menu</a>
-                        </li>
+                    <ul class="nav navbar-nav">
+                            
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                            </li>
+                            
+                            <li> 
+                                <a href="menu.html">Menu</a>
+                            </li> 
+                            
+                            <li> 
+                                <a href="delivery.html">We Deliver!</a>
+                            </li>
+                            
+                            </ul>
 
-                    <!-- Add more links! -->
-                    </ul>
                 </div>
             </div>
         </nav>
 
 
     	
-    	<!-- <img src="" alt="..." class="img-responsive">
-    	-->
+    	
+
+        <h1 class="hours">Today's Hours:</h1>
+        <div id="hours"></div>
+        <script>
+        var dayOfWeek = (new Date).getDay();
+        var hours = [
+             "8 AM to 6 PM &nbsp; Open Now!",   // Sunday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Monday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Tuesday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Wednesday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Thursday
+             "8 AM to 8 PM &nbsp; Open Now!",   // Friday
+             "8 PM to 8 PM &nbsp; Open Now!"];  // Saturday
+var todaysHours = hours[dayOfWeek];
+document.getElementById("hours").innerHTML = todaysHours;
+        </script>
+
 
             <div class="container-fluid">
             <div class="row">
                 
                 <div class="col-xs-12 col-md-12">
-            	    <h1 class="WelcomeText onFrame">Welcome</h1>
-            	       <p class="WelcomeParagraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                   	    <h1 class="WelcomeText onFrame">Welcome</h1>
+            	       <p class="WelcomeParagraph">L&C Spanish Restaurant is a small business located in Dorchester. We have the best Spanish food in the area. We make rice, beans, chicken, beef, soups and many other traditional dishes. We also have delicious seafood. We offer delivery to anyone within 3 miles~ of the restaurant. At L&C Spanish Restaurant our prices are affordable for everyone. Our employees are very good people and love what they do in the community.</p>
+
                 </div>
             </div>
             </div>
@@ -174,11 +204,19 @@
                 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
                 fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
-    		
-            <!-- test -->
+
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
     		
 
             <div id="footer-container">
+
                 <div class="logos-holder">
                     <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/1280px-Yelp_Logo.svg.png"></a>
                 </div>
@@ -192,6 +230,8 @@
                     data-share="true"></div>
                 </div>
             </div>
+
+
             
         
         
