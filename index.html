@@ -31,10 +31,6 @@
                 });
             });
         </script>
-
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900italic' rel='stylesheet' type='text/css'>
-
     <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
@@ -46,7 +42,6 @@
     <link rel="stylesheet" href="css/bootstrap.css" style="html/css">
     <link rel="stylesheet" type="text/css" href="css/johan.css">
     <script type="text/javascript" src="open_close.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
    
     
@@ -67,7 +62,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                </button>
+                 </button>
                  <a class="navbar-brand" href="index.html">L&C</a>
               </div>
              <div class="collapse navbar-collapse" id="navbar-collapsible">
@@ -84,17 +79,16 @@
                             <li> 
                                 <a href="delivery.html">We Deliver!</a>
                             </li>
-                            
+                            <!-- Add more links! -->
                             </ul>
-
                 </div>
             </div>
         </nav>
 
 
-    	
-    	
-
+        
+        <!-- <img src="" alt="..." class="img-responsive">
+        -->
         <h1 class="hours">Today's Hours:</h1>
         <div id="hours"></div>
         <script>
@@ -111,21 +105,18 @@ var todaysHours = hours[dayOfWeek];
 document.getElementById("hours").innerHTML = todaysHours;
         </script>
 
-
             <div class="container-fluid">
             <div class="row">
                 
                 <div class="col-xs-12 col-md-12">
-                   	    <h1 class="WelcomeText onFrame">Welcome</h1>
-            	       <p class="WelcomeParagraph">L&C Spanish Restaurant is a small business located in Dorchester. We have the best Spanish food in the area. We make rice, beans, chicken, beef, soups and many other traditional dishes. We also have delicious seafood. We offer delivery to anyone within 3 miles~ of the restaurant. At L&C Spanish Restaurant our prices are affordable for everyone. Our employees are very good people and love what they do in the community.</p>
-
+                        <h1 class="WelcomeText onFrame">Welcome</h1>
+                       <p class="WelcomeParagraph">L&C Spanish Restaurant is a small business located in Dorchester. We have the best Spanish food in the area. We make rice, beans, chicken, beef, soups and many other traditional dishes. We also have delicious seafood. We offer delivery to anyone within 3 miles~ of the restaurant. At L&C Spanish Restaurant our prices are affordable for everyone. Our employees are very good people and love what they do in the community.</p>
                 </div>
             </div>
             </div>
 
             <script>
             $("#slideshow > div:gt(0)").hide();
-
             setInterval(function() { 
             $('#slideshow > div:first')
             .fadeOut(1000)
@@ -158,53 +149,45 @@ document.getElementById("hours").innerHTML = todaysHours;
             <div class="container-fluid">
             <div class="row">
                 <div class="HourStyle col-xs-12 col-md-6">
-                	<ul class="TextSpacing">
-                		<h2 class="ITEMS">Find Us</h2>
-                			<div class="LocationSq">
-                			
-                			<div id="map"></div>
-								    <script async defer
-								        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_X3J8J36VU5EcZp7OGMBtEit5IJ1_Lkc
-								        &libraries=visualization&callback=initMap">
-								    </script>
-								    <script src="js/map.js"> </script>
-    	            			
-    	            	
-                			</div>
+                    <ul class="TextSpacing">
+                        <h2 class="ITEMS">Find Us</h2>
+                            <div class="LocationSq">
+                            
+                            <div id="map"></div>
+                                    <script async defer
+                                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_X3J8J36VU5EcZp7OGMBtEit5IJ1_Lkc
+                                        &libraries=visualization&callback=initMap">
+                                    </script>
+                                    <script src="js/map.js"> </script>
+                                
+                        
+                            </div>
 
-    				</ul>
-    			</div>
+                    </ul>
+                </div>
 
-    			<div class="HourStyle col-xs-12 col-md-6">
-                	<ul class="TextSpacing">
-                		<h2 class="ITEMS">Hours</h2>
-                			<div class="LocationSq">
-                				<ul class="SquareText">
-	                				<li>Sunday<span>8:00am - 6:00pm</span></li>
-	    	            			<li>Monday<span>8:00am - 8:00pm</span></li>
-	    	            			<li>Tuesday<span>8:00am - 8:00pm</span></li>
-	    	            			<li>Wednesday<span>8:00am - 8:00pm</span></li>
-	    	            			<li>Thursday<span>8:00am - 8:00pm</span></li>
-	    	            			<li>Friday<span>8:00am - 8:00pm</span></li>
-	    	            			<li>Saturday<span>8:00am - 8:00pm</span></li>
-    	            			</ul>
-                			</div>
-                			
-    				</ul>
-    			</div>
+                <div class="HourStyle col-xs-12 col-md-6">
+                    <ul class="TextSpacing">
+                        <h2 class="ITEMS">Hours</h2>
+                            <div class="LocationSq">
+                                <ul class="SquareText">
+                                    <li>Sunday<span>8:00am - 6:00pm</span></li>
+                                    <li>Monday<span>8:00am - 8:00pm</span></li>
+                                    <li>Tuesday<span>8:00am - 8:00pm</span></li>
+                                    <li>Wednesday<span>8:00am - 8:00pm</span></li>
+                                    <li>Thursday<span>8:00am - 8:00pm</span></li>
+                                    <li>Friday<span>8:00am - 8:00pm</span></li>
+                                    <li>Saturday<span>8:00am - 8:00pm</span></li>
+                                </ul>
+                            </div>
+                            
+                    </ul>
+                </div>
                 </div>
                 </div>
 
 
         <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-                fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-
             <script>(function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
@@ -212,25 +195,26 @@ document.getElementById("hours").innerHTML = todaysHours;
             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
             fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
-
-    		
+            
+            <!-- test -->
+            
 
             <div id="footer-container">
+            
+            <div 
+            
+            class="fb-like" 
+            data-href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/" 
+            data-layout="button_count" 
+            data-action="like" 
+            data-show-faces="true" 
+            data-share="true">
 
-                <div class="logos-holder">
-                    <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center"><img class="Yelp-Button" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/1280px-Yelp_Logo.svg.png"></a>
-                </div>
-
-                <div>
-                    <div 
-                    class="fb-like" 
-                    data-href="https://www.facebook.com/LC-Spanish-Restaurant-1047560608608731/" data-layout="standard" 
-                    data-action="like" 
-                    data-show-faces="true" 
-                    data-share="true"></div>
-                </div>
             </div>
-
+            <a href="https://www.yelp.com/biz/l-and-c-spanish-restaurant-dorchester-center">
+            <img class="Yelp-Logo" src="http://s3-media2.fl.yelpcdn.com/assets/srv0/www_pages/95212dafe621/assets/img/brand_guidelines/yelp-2c.png"></a>
+            
+            </div>
 
             
         

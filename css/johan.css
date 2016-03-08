@@ -11,18 +11,6 @@ body.backgroundImg {
 	margin:auto;
 }
 
-
-.WelcomeText {
-	text-align: center;
-	font-size: 40pt;
-	font-family: 'Playfair Display', serif;
-	font-size: 30pt;
-}
-
-.WelcomeParagraph {
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-}
 .navbar-brand {
 	font-size: 16pt;
 	font-family: 'Noticia Text', serif;
@@ -167,17 +155,6 @@ li {
 }
 
 
-#menu_page {
-	width: 80%;
-	background-color: rgba(255,255,255,0.7);
-	margin: 0 auto;
-}
-
-.Yelp-Button {
-	height: 60px;
-	width: 110px;
-}
-
 .Yelp-Button {
 	margin-left: 330px;
 	height: 40px;
@@ -199,10 +176,7 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-
-		body.backgroundImg {
-			background-image: none;
-
+		#hours {
 			text-align: center;
 			font-size: 10pt;
 		}
@@ -223,13 +197,13 @@ li {
 
 
 		body.backgroundImg {
+			
 		}
 
         .nomobile {
             display:none;
         }
-    }
-
+}
 @media screen and (min-width: 480px) {
 		.hiddenMin480 {
 		}
@@ -245,22 +219,17 @@ li {
 		#hours {
 			margin-left: 15px;
 		}
-
-		#footer-container {
-		    width: 100%;
-		    padding-top: 6px;
-		    margin-top: 40px;
-		    background-color: rgba(81,81,81,1);
-		    height: 200px;
-		}
-
-		.logos-holder {
-			margin: 20px 0 0 30px;
-		    height: 60px;
-		}
-
-
 }
+
+#footer-container {
+    width: 100%;
+    padding-top: 6px;
+    margin-top: 40px;
+    background-color: rgba(81,81,81,1);
+    height: 60px;
+}
+
+
 
 .logos-holder {
 	float: left;
@@ -331,5 +300,3 @@ li {
 .hours {
 	font-family: 'Monofett', cursive;
 }
-
-
